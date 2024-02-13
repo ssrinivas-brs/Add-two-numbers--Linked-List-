@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+  />
+    <title>Add two numbers(Linked List)</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="ReactTitle ">
+          <h3> Add two number (linked list) </h3>
+        </div>
+</header>    
+<main class="main" class="container" style="margin-bottom: 100px;">
+  <div class="contains">
+    <p>Traverse both lists to the end and add preceding zeros in the list with lesser digits. 
+      Then call a recursive function on the start nodes of both lists which calls itself for the
+       next nodes of both lists till it gets to the end. This function creates a node for the sum of the current digits and returns the carry</p>
+       <div class="list">
+       <h3 >Enter values for two linked lists:</h3>
+      
+    <label for="list1">List 1: </label>
+    <input type="text" id="list1" placeholder="eg : 2,,4,3">
+    
+    <label for="list2">List 2: </label>
+    <input type="text" id="list2" placeholder="eg: 5,6,4">
+    
+    <button type="button" class="btn btn-info" onclick="calculateSum()">Calculate Sum</button>
+    
+    <p id="result">Result will be displayed here</p>  </div>
+  </div>
+  </div>
+  </main>
+  
+  <footer class="footer footer-dark">
+    <div class="d-flex justify-content-center px-5">
+      <div>
+        <button
+          onclick="setTheme('#1A4B84')"
+          class="theme-switch theme-switch-chathams_blue"
+        ></button>
+        <button
+          onclick="setTheme('#991E14')"
+          class="theme-switch theme-switch-tamarillo"
+        ></button>
+        <button
+          onclick="setTheme('#FEAD06')"
+          class="theme-switch theme-switch-yellow_sea"
+        ></button>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/linkedlist.js"></script>
+</body>
+</html>
